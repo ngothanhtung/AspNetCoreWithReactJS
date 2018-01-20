@@ -30,14 +30,14 @@ module.exports = {
     },
     plugins: debug ? [
         new webpack.optimize.CommonsChunkPlugin({
-            name: 'react',
-            filename: '[name].bundle.js',
+            name: "react",
+            filename: "[name].bundle.js",
             minChunks: Infinity
         }),
         new webpack.optimize.CommonsChunkPlugin({
-            name: 'bundle',
-            chunks: ['index', 'about'],
-            filename: '[name].bundle.js',
+            name: "bundle",
+            chunks: ["index", "about"],
+            filename: "[name].bundle.js",
         })
     ] : [
         new webpack.optimize.DedupePlugin(),
