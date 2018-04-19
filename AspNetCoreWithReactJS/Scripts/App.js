@@ -1,4 +1,6 @@
 ﻿import React, { Component } from "react";
+import Header from './Header';
+
 
 export default class App extends Component {
     constructor(props) {
@@ -23,6 +25,7 @@ export default class App extends Component {
         if (this.state.loading === false) {
             return (
                 <div>
+                    <Header />
                     <h1>Hello From ReactJS</h1>
                     {
                         this.state.model.map((x) =>

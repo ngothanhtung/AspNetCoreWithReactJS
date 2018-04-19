@@ -21,7 +21,8 @@ namespace AspNetCoreWithReactJS.Controllers
         {
             var items = new[] {
                 new { Id = 1, Name = "John" },
-                new { Id = 2, Name = "Peter" }
+                new { Id = 2, Name = "Peter" },
+                new { Id = 3, Name = "Mary" }
             };
 
             return items.ToList();
